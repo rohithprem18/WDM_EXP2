@@ -1,7 +1,5 @@
 ### EX2 Generating Association Rules for Employee dataset using Apriori Algorithm
-### DATE: 
-### AIM: 
-To generate associate rules for the employee dataset using Apriori Algorithm.
+### AIM: To generate associate rules for the employee dataset using Apriori Algorithm.
 ### Description:
 In data mining, association rule learning is a popular and well researched method for discovering interesting
 relations between variables in large databases. It can be described as analyzing and presenting strong rules discovered
@@ -12,6 +10,48 @@ Creation of Buying Table:
 1) Open Start -> Programs -> Accessories -> Notepad
 2) Type the following training data set with the help of Notepad for Buying Table.
 
+```
+@relation employee-1
+@attribute age {youth, middle, senior} 
+@attribute income {high, medium, low} 
+@attribute class {A, B, C}
+@data
+youth, high, A 
+youth,medium,B 
+youth, low, C 
+middle, low, C 
+middle, medium, C 
+middle, high, A 
+senior, low, C 
+senior, medium, B 
+senior, high, B 
+middle, high, B
+
+```
+```
+@relation bank
+@attribute cust {male,female} 
+@attribute accno {0101,0102,0103,0104,0105,0106,0107,0108,0109,0110,0111,0112,0113,0114,0115}
+@attribute bankname {sbi,hdfc,sbh,ab,rbi} 
+@attribute location {hyd,jmd,antp,pdtr,kdp} 
+@attribute deposit {yes,no}
+@data 
+male,0101,sbi,hyd,yes 
+female,0102,hdfc,jmd,no 
+male,0103,sbh,antp,yes 
+male,0104,ab,pdtr,yes 
+female,0105,sbi,jmd,no 
+male,0106,ab,hyd,yes 
+female,0107,rbi,jmd,yes 
+female,0108,hdfc,kdp,no 
+male,0109,sbh,kdp,yes 
+male,0110,ab,jmd,no 
+female,0111,rbi,kdp,yes 
+male,0112,sbi,jmd,yes 
+female,0113,rbi,antp,no 
+male,0114,hdfc,pdtr,yes 
+female,0115,sbh,pdtr,no
+```
 ```
 @relation buying
 @attribute age {L20,20-40,G40}
@@ -43,11 +83,15 @@ G40,high,yes,excellent,yes
 7) Explorer shows many options. In that click on ‘open file’ and select the arff file
 8) Click on edit button which shows buying table on weka.
 ### OUTPUT:
-![image](https://github.com/Karthikeyan21001828/WDM_EXP2/assets/93427303/9dd0ffbb-14ee-4a9a-9d39-626bdc026926)
+# EMPLOYEE DATASET:
+![image](https://github.com/21005688/WDM_EXP2/assets/94747031/8812f0f6-e672-4f21-81c9-cf36d0a529b9)
+# BANKING DATASET:
+![image](https://github.com/21005688/WDM_EXP2/assets/94747031/9f9ef3d0-53e6-4f80-93aa-eb4c80dca1db)
+# BUYING DATASET:
+![image](https://github.com/21005688/WDM_EXP2/assets/94747031/cfe8680f-2647-446e-8025-b00c285d8cb6)
 
-![image](https://github.com/Karthikeyan21001828/WDM_EXP2/assets/93427303/a80a41e6-f28a-49b0-8888-ccc3229c0769)
 
-![image](https://github.com/Karthikeyan21001828/WDM_EXP2/assets/93427303/eb716852-39ce-41cc-8c43-3f16f6082a9e)
+
 
 ### Procedure for Association Rules:
 1) Open Start -> Programs -> Accessories -> Notepad
@@ -58,11 +102,15 @@ G40,high,yes,excellent,yes
 6) Click on Start button and output will be displayed on the right side of the window.
 
 ### OUTPUT:
-![image](https://github.com/Karthikeyan21001828/WDM_EXP2/assets/93427303/f70f1ab3-aa17-4b08-b910-819ed904848c)
+# EMPLOYEE DATASET:
+![image](https://github.com/21005688/WDM_EXP2/assets/94747031/5bf27c75-845b-40e4-9a7e-3c0076c7be03)
+# BANKING DATASET:
 
-![image](https://github.com/Karthikeyan21001828/WDM_EXP2/assets/93427303/636e982f-9408-4b91-8620-df0086788c4e)
+![image](https://github.com/21005688/WDM_EXP2/assets/94747031/4eaaca11-116a-45f2-a900-3ef7d04a1aec)
+# BUYING DATASET:
+![image](https://github.com/21005688/WDM_EXP2/assets/94747031/77299877-9a80-45a6-89bd-548b9f6abb8f)
 
-![image](https://github.com/Karthikeyan21001828/WDM_EXP2/assets/93427303/ea2f1bd2-40cb-4e09-a9ee-d7070a79de69)
+
 
 ### RESULT: 
-Thus we have generated associate rules for the employee dataset using Apriori Algorithm.
+Thus the program has been successfully executed.
